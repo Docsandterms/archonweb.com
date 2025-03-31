@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archon - Creative Services</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Archon</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find the perfect creative services for your business</h1>
+            <div class="search-box">
+                <input type="text" placeholder="What service are you looking for today?">
+                <button class="search-button">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <div class="popular-searches">
+                <span>Popular:</span>
+                <a href="#website">Website Development</a>
+                <a href="#video">Video Editing</a>
+                <a href="#thumbnail">Thumbnail Design</a>
+                <a href="#wedding">Wedding Cards</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing for shorts, reels, and YouTube content</p>
+                    <a href="#pricing" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-image"></i>
+                    <h3>Thumbnail Design</h3>
+                    <p>Eye-catching thumbnails that boost your content's click-through rate</p>
+                    <a href="#pricing" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Wedding Cards</h3>
+                    <p>Beautiful wedding invitation designs for your special day</p>
+                    <a href="#pricing" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="website">Websites</button>
+            <button class="filter-btn" data-filter="video">Videos</button>
+            <button class="filter-btn" data-filter="thumbnail">Thumbnails</button>
+            <button class="filter-btn" data-filter="design">Designs</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Website Projects -->
+            <div class="portfolio-item" data-category="website">
+                <img src="images/website1.jpg" alt="E-commerce Website">
+                <div class="portfolio-overlay">
+                    <h3>E-commerce Website</h3>
+                    <p>Online Store Design</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="website">
+                <img src="images/website2.jpg" alt="Business Website">
+                <div class="portfolio-overlay">
+                    <h3>Business Website</h3>
+                    <p>Corporate Design</p>
+                </div>
+            </div>
+
+            <!-- Video Projects -->
+            <div class="portfolio-item" data-category="video">
+                <img src="images/video1.jpg" alt="YouTube Video">
+                <div class="portfolio-overlay">
+                    <h3>YouTube Video</h3>
+                    <p>Content Creation</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="video">
+                <img src="images/video2.jpg" alt="Commercial Ad">
+                <div class="portfolio-overlay">
+                    <h3>Commercial Ad</h3>
+                    <p>Professional Editing</p>
+                </div>
+            </div>
+
+            <!-- Thumbnail Projects -->
+            <div class="portfolio-item" data-category="thumbnail">
+                <img src="images/thumbnail1.jpg" alt="YouTube Thumbnail">
+                <div class="portfolio-overlay">
+                    <h3>YouTube Thumbnail</h3>
+                    <p>Gaming Channel</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="thumbnail">
+                <img src="images/thumbnail2.jpg" alt="Video Thumbnail">
+                <div class="portfolio-overlay">
+                    <h3>Video Thumbnail</h3>
+                    <p>Educational Content</p>
+                </div>
+            </div>
+
+            <!-- Design Projects -->
+            <div class="portfolio-item" data-category="design">
+                <img src="images/design1.jpg" alt="Logo Design">
+                <div class="portfolio-overlay">
+                    <h3>Logo Design</h3>
+                    <p>Brand Identity</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="design">
+                <img src="images/design2.jpg" alt="Social Media Design">
+                <div class="portfolio-overlay">
+                    <h3>Social Media Design</h3>
+                    <p>Instagram Posts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <!-- Video Editing -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Video Editing</h3>
+                        <div class="price">
+                            <span class="amount">$5</span>
+                            <span class="period">/video</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic (Shorts/Reels 30-60 sec)</li>
+                        <li><i class="fas fa-check"></i> Standard (YouTube 5-10 min)</li>
+                        <li><i class="fas fa-check"></i> Advanced (10-20 min)</li>
+                        <li><i class="fas fa-check"></i> High-quality effects</li>
+                    </ul>
+                    <div class="price-range">
+                        <p>Basic: $5 - $15</p>
+                        <p>Standard: $30 - $80</p>
+                        <p>Advanced: $100+</p>
+                    </div>
+                    <a href="#scheduling" class="pricing-button">Get Started</a>
+                </div>
+                <!-- Thumbnail Design -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Thumbnail Design</h3>
+                        <div class="price">
+                            <span class="amount">$5</span>
+                            <span class="period">/thumbnail</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom Thumbnail Design</li>
+                        <li><i class="fas fa-check"></i> High Resolution</li>
+                        <li><i class="fas fa-check"></i> Eye-catching Graphics</li>
+                        <li><i class="fas fa-check"></i> Bulk Discounts Available</li>
+                    </ul>
+                    <div class="price-range">
+                        <p>Basic: $5 - $10</p>
+                        <p>Bulk (5 thumbnails): $20 - $40</p>
+                    </div>
+                    <a href="#scheduling" class="pricing-button">Get Started</a>
+                </div>
+                <!-- Wedding Cards -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Wedding Cards</h3>
+                        <div class="price">
+                            <span class="amount">$20</span>
+                            <span class="period">/design</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom Wedding Card Design</li>
+                        <li><i class="fas fa-check"></i> Multiple Layout Options</li>
+                        <li><i class="fas fa-check"></i> High Resolution Files</li>
+                        <li><i class="fas fa-check"></i> Print-ready Files</li>
+                    </ul>
+                    <div class="price-range">
+                        <p>Basic: $20 - $50</p>
+                        <p>Premium: $50+</p>
+                    </div>
+                    <a href="#scheduling" class="pricing-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scheduling Section -->
+    <section id="scheduling" class="schedule">
+        <div class="container">
+            <h2>Schedule a Project</h2>
+            <div class="schedule-container">
+                <div class="schedule-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+                    <div class="schedule-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Guaranteed</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-form">
+                    <form id="scheduleForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="website">Website Development</option>
+                                <option value="video">Video Editing</option>
+                                <option value="thumbnail">Thumbnail Design</option>
+                                <option value="wedding">Wedding Cards</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="budget" placeholder="Budget Range" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Project Details" required></textarea>
+                        </div>
+                        <button type="submit" class="schedule-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have a project in mind? Let's discuss how we can help bring your vision to life.</p>
+                    <div class="contact-features">
+                        <div class="feature">
+                            <i class="fas fa-envelope"></i>
+                            <span>mdsalman.maqbul30@gmail.com</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9962251243 (Call for emergency, otherwise email)</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Archon</h3>
+                <p>Professional creative services for your needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: mdsalman.maqbul30@gmail.com</p>
+                <p>Phone: +91 9962251243 (Emergency only)</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Archon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Calendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Initialize Flatpickr
+        flatpickr("#date", {
+            minDate: "today",
+            dateFormat: "Y-m-d",
+            disable: [
+                function(date) {
+                    return (date.getDay() === 0 || date.getDay() === 6);
+                }
+            ],
+            locale: {
+                firstDayOfWeek: 1
+            }
+        });
+
+        // Location and Currency Detection
+        let userLocation = null;
+        let userCurrency = 'USD';
+        let exchangeRate = 1;
+
+        async function detectLocation() {
+            try {
+                const response = await axios.get('https://ipapi.co/json/');
+                const data = response.data;
+                userLocation = data.country;
+                userCurrency = data.currency;
+                
+                // Get exchange rate from USD to user's currency
+                const rateResponse = await axios.get(`https://api.exchangerate-api.com/v4/latest/USD`);
+                const rateData = rateResponse.data;
+                exchangeRate = rateData.rates[userCurrency];
+                
+                updatePrices();
+            } catch (error) {
+                console.error('Error detecting location:', error);
+            }
+        }
+
+        function updatePrices() {
+            const priceElements = document.querySelectorAll('.amount');
+            const priceRanges = document.querySelectorAll('.price-range p');
+            
+            // Update base prices
+            priceElements.forEach(element => {
+                const originalPrice = parseFloat(element.textContent.replace(/[^0-9.]/g, ''));
+                const convertedPrice = (originalPrice * exchangeRate).toFixed(2);
+                element.textContent = `${userCurrency} ${convertedPrice}`;
+            });
+            
+            // Update price ranges
+            priceRanges.forEach(range => {
+                const text = range.textContent;
+                const prices = text.match(/\$(\d+)/g);
+                if (prices) {
+                    let newText = text;
+                    prices.forEach(price => {
+                        const originalPrice = parseFloat(price.replace('$', ''));
+                        const convertedPrice = (originalPrice * exchangeRate).toFixed(2);
+                        newText = newText.replace(price, `${userCurrency} ${convertedPrice}`);
+                    });
+                    range.textContent = newText;
+                }
+            });
+        }
+
+        // Call detectLocation when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            detectLocation();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
